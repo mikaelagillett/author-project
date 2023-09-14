@@ -44,7 +44,6 @@ h1 {
 }
 h2 {
   font-size: 48px;
-  text-align: center;
 }
 h3 {
   font-weight: 700;
@@ -101,6 +100,48 @@ section {
   max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+footer {
+  padding: 89px 179px;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(../images/stephen-king-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-light);
+}
+footer a {
+  color: var(--primary-light);
+}
+footer div {
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 24px;
+}
+footer div ul,
+footer div p {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 100%;
+  margin-top: 16px;
+}
+footer ul {
+  list-style-type: none;
+  text-align: left;
+  padding-inline-start: 0 !important;
+}
+footer ul a {
+  text-decoration: none;
+}
+footer ul a:hover {
+  text-decoration: underline;
+}
+footer a:hover {
+  color: var(--accent-color);
 }
 .container {
   max-width: 1400px;
@@ -214,5 +255,14 @@ section {
   }
   .card-grid-desktop {
     display: none;
+  }
+  footer {
+    padding: 45px 60px;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 32px;
+    text-align: center;
   }
 }

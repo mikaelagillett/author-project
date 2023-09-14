@@ -1,0 +1,95 @@
+:root {
+  --primary-light: rgb(255, 255, 255);
+  --secondary-light: rgb(249, 244, 255);
+  --primary-dark: rgb(39, 32, 68);
+  --secondary-dark: rgb(30, 27, 44);
+  --accent-color: rgb(176, 55, 29);
+  --header-font: "Spectral", serif;
+  --main-font: "Source Sans 3", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.56),
+      rgba(39, 32, 68, 0.56)
+    ),
+    url(../images/stephen-king.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--primary-light);
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: var(--header-font);
+  font-weight: 800;
+}
+h1 {
+  font-size: 128px;
+  margin-bottom: 16px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+}
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+.container {
+  max-width: 1400px;
+  width: 98vw;
+  margin: 0 auto;
+}
+.header-main {
+  margin: 64px 0;
+}
+.learn-more {
+  padding: 16px 32px;
+  background-color: var(--accent-color);
+  border: none;
+}
+.learn-more a {
+  font-weight: 700;
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-light);
+}
+.header-content {
+  padding: 214px 0;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .header-content {
+    padding: 60px 0;
+  }
+  .header-main {
+    margin: 32px 0;
+  }
+}
